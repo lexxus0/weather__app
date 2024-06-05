@@ -18,13 +18,19 @@
     <div class="container">
       <div class="weather__header">
         <form class="weather__search">
-          <input type="text" class="weather__searchform" 
-          placeholder="Search for a city..."/>
+          <input
+            type="text"
+            class="weather__searchform"
+            placeholder="Search for a city..."
+          />
+          <svg class="search-svg" width="14" height="14">
+            <use href="./svg/wa-icons.svg#icon-search"></use>
+          </svg>
           <i class="fa-solid fa-magnifying-glass"></i>
         </form>
         <div class="weather__units">
           <span class="weather_unit_celsius"
-            ><svg class="degrees cel"  width="20" height="20">
+            ><svg class="degrees cel" width="20" height="20">
               <use href="./svg/wa-icons.svg#icon-celsius"></use></svg
           ></span>
           <span class="weather_unit_farenheit"
@@ -49,41 +55,50 @@
         <div class="weather__card">
           <i class="fa-solid fa-temperature-full"></i>
           <div>
-            <svg class="icon-parametrs" width="10" height="10">
-              <use href="./svg/wa-icons.svg"></use>
+            <svg class="icon-parametrs" width="40" height="40">
+              <use href="./svg/wa-icons.svg#icon-temperature "></use>
             </svg>
-            <p>Feels like</p>
-            <p class="weather__realfeel">18&#176;</p>
+            <div class="parametres">
+              <p>Feels like</p>
+              <p class="weather__realfeel">18&#176;</p>
+            </div>
           </div>
         </div>
         <div class="weather__card">
           <i class="fa-solid fa-droplet"></i>
           <div>
-            <svg class="icon-parametrs" width="10" height="10"">
-              <use href="./svg/wa-icons.svg"></use>
+            <svg class="icon-parametrs" width="40" height="40">
+              <use href="./svg/wa-icons.svg#icon-humidity"></use>
             </svg>
-            <p>Humidity</p>
-            <p class="weather__humidity">18&#176;</p>
+            <div class="parametres">
+              <p>Humidity</p>
+              <p class="weather__humidity">18&#176;</p>
+            </div>
           </div>
         </div>
         <div class="weather__card">
           <i class="fa-solid fa-wind"></i>
           <div>
-            <svg class="icon-parametrs" width="10" height="10">
-              <use href="./svg/wa-icons.svg#"></use>
+            <svg class="icon-parametrs" width="40" height="40">
+              <use href="./svg/wa-icons.svg#icon-wind"></use>
             </svg>
-            <p>Wind</p>
-            <p class="weather__wind">18&#176;</p>
+            <div class="parametres">
+              <p>Wind</p>
+              <p class="weather__wind">18&#176;</p>
+            </div>
           </div>
         </div>
         <div class="weather__card">
           <i class="fa-solid fa-gauge-high"></i>
           <div>
-            <svg class="icon-parametrs" width="10" height="10">
-              <use href="./svg/wa-icons.svg" ></use>
+            <svg class="icon-parametrs" width="40" height="40">
+              <use href="./svg/wa-icons.svg#icon-pressure"></use>
             </svg>
-            <p>Pressure</p>
-            <p class="weather__pressure">18&#176;</p>
+            <div class="parametres">
+              <p>Pressure</p>
+              <p class="weather__pressure">18&#176;</p>
+            </div>
+            
           </div>
         </div>
       </div>

@@ -3,10 +3,11 @@ body{
   font-weight: 300;
 }
 
+
 .container {
   background: #171717;
   color: #fff;
-  padding: 2rem;
+  padding: 2.5rem;
   width: 40%;
   margin: 4rem auto;
   border-radius: 10px;
@@ -43,6 +44,20 @@ input::placeholder {
   color: #fff;
 }
 
+.weather__searchform{
+  position: relative;
+}
+
+
+
+.search-svg{
+  fill: white;
+  fill-opacity: 0.6;
+  position:absolute;
+  top: 8.5px; 
+  left: 10px; 
+}
+
 .weather__units {
   position: relative;
 }
@@ -50,12 +65,12 @@ input::placeholder {
 .degrees{
   position: absolute;
   fill: white;
-  right: -190px;
-  top: -60px;
+  right: -170px;
+  top: -75px;
 }
 
 .cel {
-  right: -165px;
+  right: -135px;
 }
 
 .weather__units span:first-child {
@@ -140,14 +155,21 @@ input::placeholder {
 
 .icon-parametrs{
   position:absolute;
+  left: 13px;
+  fill: white;
+  top: 35px;
+}
+
+.parametres{
+  margin-left: 40px;
 }
 
 
 
 @media screen and (max-width: 936px) {
   .container {
-    width: 90%;
-    max-width:400px;
+    width: 300px;
+    max-width:300px;
     margin: 0 auto;
   }
 
@@ -160,7 +182,7 @@ input::placeholder {
   }
 }
 
- @media screen and (max-width: 400px) {
+ @media screen and (max-width: 750px) {
   .weather__info {
     grid-template-columns: none;
   }
