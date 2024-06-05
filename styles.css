@@ -1,3 +1,8 @@
+body{
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
 .container {
   background: #171717;
   color: #fff;
@@ -39,11 +44,27 @@ input::placeholder {
 }
 
 .weather__units {
-  font-size: 1.5rem;
+  position: relative;
+}
+
+.degrees{
+  position: absolute;
+  fill: white;
+  right: -190px;
+  top: -60px;
+}
+
+.cel {
+  right: -165px;
 }
 
 .weather__units span:first-child {
   margin-right: 0.5rem;
+}
+
+.weather__searchform::placeholder{
+  padding-left: 0;
+  text-align: left;
 }
 
 .weather__body {
@@ -90,6 +111,7 @@ input::placeholder {
 
 .weather__card {
   display: flex;
+  position: relative;
   align-items: center;
   background: #1e1e1e;
   padding: 1rem;
@@ -116,9 +138,17 @@ input::placeholder {
     height: 24px;
 }
 
+.icon-parametrs{
+  position:absolute;
+}
+
+
+
 @media screen and (max-width: 936px) {
   .container {
     width: 90%;
+    max-width:400px;
+    margin: 0 auto;
   }
 
   .weather__header {
@@ -130,8 +160,8 @@ input::placeholder {
   }
 }
 
-@media screen and (max-width: 400px) {
+ @media screen and (max-width: 400px) {
   .weather__info {
     grid-template-columns: none;
   }
-}
+} 
